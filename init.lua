@@ -1,0 +1,1 @@
+../../../Desktop/neovim-for-beginner/init.lua
