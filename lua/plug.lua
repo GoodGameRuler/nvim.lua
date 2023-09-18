@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
 
     -- Packer can manage itself
     use 'wbthomason/packer.nvim' -- Have Packer manage itself
+ 
+    -- TreeSitter
+    use("nvim-treesitter/nvim-treesitter")
 
     -- A plugin that lets you pin files globally
     use('ThePrimeagen/harpoon')
@@ -108,8 +111,32 @@ return require('packer').startup(function(use)
         },
     })
 
-    -- java
+    -- Java Autocomplete
     use ('mfussenegger/nvim-jdtls')
+
+    -- CMDLine
+    use {
+        "folke/noice.nvim",
+        requires = {
+            {'MunifTanjim/nui.nvim'}
+        }
+    }
+
+
+    -- CMDLine
+    use {
+        'VonHeikemen/fine-cmdline.nvim',
+        requires = {
+            {"MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            }
+        }
+    }
+
+    use("rcarriga/nvim-notify")
+
 
     if packer_bootstrap then
 		require("packer").sync()
