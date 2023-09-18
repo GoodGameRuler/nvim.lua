@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/udit/.local/share/nvim/site/pack/packer/start/nvim-compe",
     url = "https://github.com/hrsh7th/nvim-compe"
   },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/home/udit/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
+    url = "https://github.com/mfussenegger/nvim-jdtls"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/udit/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -159,14 +164,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: oil.nvim
-time([[Config for oil.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
-time([[Config for oil.nvim]], false)
 -- Config for: advanced-git-search.nvim
 time([[Config for advanced-git-search.nvim]], true)
 try_loadstring("\27LJ\2\n—\1\0\0\5\0\b\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\5\0005\3\3\0004\4\0\0=\4\4\3=\3\6\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\a\0'\2\4\0B\0\2\1K\0\1\0\19load_extension\15extensions\1\0\0\24advanced_git_search\1\0\0\nsetup\14telescope\frequire\0", "config", "advanced-git-search.nvim")
 time([[Config for advanced-git-search.nvim]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
