@@ -32,3 +32,10 @@ vim.opt.foldlevel = 99
 --   au BufWinEnter * silent loadview
 --   ]]
 -- )
+
+-- Error bars don't keep moving when not there
+vim.o.signcolumn = "yes:2"
+
+-- Spell Check
+vim.opt.spelllang = 'en_au'
+vim.opt.spell = false

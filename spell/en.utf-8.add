@@ -1,0 +1,5 @@
+BufWinEnter
+BufWinLeave
+mkview
+loadview
+cmd

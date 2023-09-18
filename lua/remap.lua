@@ -42,7 +42,7 @@ vim.keymap.set("n", "<leader><leader>", "`")
 -- Mason
 vim.keymap.set("n", "<leader>ma", ":Mason<CR>")
 
--- Mason
+-- LSPInfo
 vim.keymap.set("n", "<leader>li", ":LspInfo<CR>")
 
 -- VimBeGood
@@ -58,3 +58,19 @@ vim.keymap.set("n", "<leader>li", ":LspInfo<CR>")
 
 -- Oil Tree
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- Undo Tree
+vim.keymap.set("n", "<leader>u", ":UndotreeToggle<CR>")
+
+-- Packer Sync
+vim.keymap.set("n", "<leader>ps", ":PackerSync<CR>")
+
+-- Fuzzy Finder Telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fr', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+-- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- Git Fuzzy Finder
+vim.keymap.set('n', '<leader>fg', ':AdvancedGitSearch diff_commit_file<CR>')
