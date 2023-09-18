@@ -11,12 +11,7 @@
 --     },
 -- })
 
--- require('nightforest').setup({
---     midnight = true, -- Set to `true` to use `midnight` variant to render a deep dark background.
---     overrides = {}, -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
--- })
-
 require('nightforest').setup({
-    midnight = true,
+    midnight = true, -- Set to `true` to use `midnight` variant to render a deep dark background.
     overrides = {}, -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
 })
