@@ -42,7 +42,7 @@ return require('packer').startup(function(use)
 
     -- Packer can manage itself
     use 'wbthomason/packer.nvim' -- Have Packer manage itself
- 
+
     -- TreeSitter
     use("nvim-treesitter/nvim-treesitter")
 
@@ -68,6 +68,8 @@ return require('packer').startup(function(use)
 
     -- Current Theme
     use('aktersnurra/no-clown-fiesta.nvim')
+    use('kvrohit/rasmus.nvim')
+    use('xfyuan/nightforest.nvim')
 
     -- Package Manger + LSP
     use {
@@ -121,22 +123,17 @@ return require('packer').startup(function(use)
             {'MunifTanjim/nui.nvim'}
         }
     }
+        -- Requirement for CMDLine
+        use("rcarriga/nvim-notify")
 
-
-    -- CMDLine
+    -- TODO Bar
     use {
-        'VonHeikemen/fine-cmdline.nvim',
+        "folke/todo-comments.nvim",
         requires = {
-            {"MunifTanjim/nui.nvim",
-            -- OPTIONAL:
-            --   `nvim-notify` is only needed, if you want to use the notification view.
-            --   If not available, we use `mini` as the fallback
-            }
-        }
+            "nvim-lua/plenary.nvim",
+            "folke/trouble.nvim",
+        },
     }
-
-    use("rcarriga/nvim-notify")
-
 
     if packer_bootstrap then
 		require("packer").sync()

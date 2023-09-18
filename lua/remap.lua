@@ -84,5 +84,14 @@ vim.keymap.set('n', '<leader>fg', ':AdvancedGitSearch diff_commit_file<CR>')
 -- inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 -- inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
--- CMDLine Remap
--- vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+-- Todo Commands
+vim.keymap.set('n', '<leader>td', ':TodoTelescope keywords=TODO,FIX,BUG<CR>')
+vim.keymap.set('n', '<leader>tl', ':TodoTrouble cwd=./<CR>')
+
+-- Trouble
+vim.keymap.set("n", "<leader>xx", function() require("trouble").open() end)
+vim.keymap.set("n", "<leader>xw", function() require("trouble").open("workspace_diagnostics") end)
+vim.keymap.set("n", "<leader>xd", function() require("trouble").open("document_diagnostics") end)
+vim.keymap.set("n", "<leader>xq", function() require("trouble").open("quickfix") end)
+vim.keymap.set("n", "<leader>xl", function() require("trouble").open("loclist") end)
+vim.keymap.set("n", "gR", function() require("trouble").open("lsp_references") end)
