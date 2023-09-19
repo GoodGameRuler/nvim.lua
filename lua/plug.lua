@@ -135,6 +135,9 @@ return require('packer').startup(function(use)
         },
     }
 
+    -- MD, LaTeX ++ Previewer
+    use("frabjous/knap")
+
     if packer_bootstrap then
 		require("packer").sync()
     end

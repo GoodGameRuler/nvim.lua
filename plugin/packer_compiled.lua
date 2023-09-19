@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/udit/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  knap = {
+    loaded = true,
+    path = "/home/udit/.local/share/nvim/site/pack/packer/start/knap",
+    url = "https://github.com/frabjous/knap"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/udit/.local/share/nvim/site/pack/packer/start/lualine.nvim",
