@@ -80,6 +80,11 @@ _G.packer_plugins = {
     path = "/home/udit/.local/share/nvim/site/pack/packer/start/advanced-git-search.nvim",
     url = "https://github.com/aaronhallaert/advanced-git-search.nvim"
   },
+  ["conform.nvim"] = {
+    loaded = true,
+    path = "/home/udit/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/udit/.local/share/nvim/site/pack/packer/start/harpoon",

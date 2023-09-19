@@ -138,6 +138,9 @@ return require('packer').startup(function(use)
     -- MD, LaTeX ++ Previewer
     use("frabjous/knap")
 
+    -- Formatter / Format Manager
+    use('stevearc/conform.nvim')
+
     if packer_bootstrap then
 		require("packer").sync()
     end
