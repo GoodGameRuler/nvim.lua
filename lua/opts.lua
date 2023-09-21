@@ -34,5 +34,5 @@ vim.opt.foldlevel = 99
 vim.o.signcolumn = "yes:2"
 
 -- Spell Check
-vim.opt.spelllang = 'en_au'
+vim.opt.spelllang = "en_au"
 vim.opt.spell = false
