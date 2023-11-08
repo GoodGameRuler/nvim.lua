@@ -1,5 +1,9 @@
+local lspconfig = require("lspconfig")
+
 require("lspconfig").clangd.setup({})
 require("lspconfig").jdtls.setup({})
+
+lspconfig.djlint.setup({})
 
 -- LaTeX
 require("lspconfig").ltex.setup({
